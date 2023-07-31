@@ -38,4 +38,19 @@ class Users{
 let mohammad = new Users(1,'mohaamad',1234)
 
 
+
+
 //ارث بری
+class nums{
+    constructor(public num_1:number, public num_2:number) {}
+}
+class numbers extends nums{
+    constructor(public num_1,public num_2,public num_3) {
+        super(num_1,num_2);
+    }
+    plus(){
+        console.log(this.num_1 + this.num_2 + this.num_3)
+    }
+}
+
+let P = new numbers(1,5,98)
